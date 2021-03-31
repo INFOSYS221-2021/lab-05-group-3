@@ -2,12 +2,10 @@
 # Write a simple program that finds the value at the nth position in the Fibonacci sequence
 
 def fibonacciPos(position): 
-    if position == 1:
-        return 0;
-    elif position == 2:
+    if position <= 2:
         return 1;      
     else:
-        return fibonacciPos(position-1)+fibonacciPos(position-2)
+        return fibonacciPos(position-1) + fibonacciPos(position-2)
 
 
 print("The value at the 6th postion in the Fibonacci sequence is 8")
