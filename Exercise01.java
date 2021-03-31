@@ -14,8 +14,12 @@ public class ExerciseOne {
     
     // Exercise One
     private String reverseString(String word) {
+        String revWord = "";
+            for (int i = 0; i < word.length(); i++) {
+                revWord = word.charAt(i) + revWord;
+            }
         // Complete this method to return the reveresed order of the given word
-        return "";
+        return revWord;
     }
     
     // Exercise Four
